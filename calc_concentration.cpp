@@ -8,7 +8,7 @@ int main(){
     pair<float,float> pupil={0,0};
     clock_t start = clock();
     while(1){
-        //pupil 전송 받음
+        //get_pupil from opencv process and save to pupil 
         if(((float)(clock()-start)/CLOCKS_PER_SEC)<1) continue;
         
         //cin>>pupil.first>>pupil.second;
@@ -17,9 +17,11 @@ int main(){
         st.chk_state(pupil);
         st.change_state();
         st.ex_pupil = pupil;
-        //web으로 state 전송, 유사도 계산을 위해 file 저장
+        
         cout<<st.state<<endl;
+        // send st.state to model process
         start = clock();
+        
     }
     return 0;
 }
