@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     Student st;
-    pair<float,float> pupil;
+    pair<float,float> pupil={0,0};
     clock_t start = clock();
     while(1){
         //pupil 전송 받음
@@ -16,7 +16,7 @@ int main(){
 
         st.chk_state(pupil);
         st.change_state();
-        
+        st.ex_pupil = pupil;
         //web으로 state 전송, 유사도 계산을 위해 file 저장
         cout<<st.state<<endl;
         start = clock();

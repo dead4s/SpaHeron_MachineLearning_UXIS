@@ -25,6 +25,7 @@ State Student::change_state(){
     return state;
 }
 State Student::chk_state(pair<int,int> pupil){
+    
     if(pupil.first<0&&pupil.second<0) {
         cnt_face.first++;
         cnt_eye.first++;
