@@ -1,2 +1,11 @@
+.DS_Store
+*.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+eye_tracking/img
+eye_tracking/__pycache__
+
 .vscode/
 *.exe
