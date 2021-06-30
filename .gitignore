@@ -7,4 +7,5 @@
 eye_tracking/img
 eye_tracking/__pycache__
 
-.vscode
+.vscode/
+*.exe
